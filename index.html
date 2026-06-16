@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenit Obfuscator - Code Protection Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">🔐 Zenit Obfuscator</h1>
+                <p class="tagline">Professional Code Obfuscation & Protection</p>
+                <div class="user-info">
+                    <span class="username">by @ZENITBHAI</span>
+                    <span class="repo-info">Repository: Zenit-obfuscator</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Input Section -->
+            <section class="input-section">
+                <h2>Enter Your Code</h2>
+                <textarea 
+                    id="codeInput" 
+                    placeholder="Paste your JavaScript, Python, or any code here..." 
+                    class="code-input"
+                ></textarea>
+            </section>
+
+            <!-- Obfuscation Levels -->
+            <section class="levels-section">
+                <h2>Select Obfuscation Level</h2>
+                <div class="levels-grid">
+                    <label class="level-option">
+                        <input type="radio" name="obfuscationLevel" value="1" checked>
+                        <div class="level-card level-1">
+                            <h3>Level 1</h3>
+                            <p class="level-name">Basic</p>
+                            <p class="level-desc">Minimal obfuscation with variable renaming</p>
+                            <div class="level-details">
+                                <ul>
+                                    <li>✓ Variable Renaming</li>
+                                    <li>✗ String Encoding</li>
+                                    <li>✗ Code Flow</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="level-option">
+                        <input type="radio" name="obfuscationLevel" value="2">
+                        <div class="level-card level-2">
+                            <h3>Level 2</h3>
+                            <p class="level-name">Standard</p>
+                            <p class="level-desc">Variable renaming + string encoding</p>
+                            <div class="level-details">
+                                <ul>
+                                    <li>✓ Variable Renaming</li>
+                                    <li>✓ String Encoding</li>
+                                    <li>✗ Code Flow</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="level-option">
+                        <input type="radio" name="obfuscationLevel" value="3">
+                        <div class="level-card level-3">
+                            <h3>Level 3</h3>
+                            <p class="level-name">Advanced</p>
+                            <p class="level-desc">Includes code flow obfuscation</p>
+                            <div class="level-details">
+                                <ul>
+                                    <li>✓ Variable Renaming</li>
+                                    <li>✓ String Encoding</li>
+                                    <li>✓ Code Flow</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="level-option">
+                        <input type="radio" name="obfuscationLevel" value="4">
+                        <div class="level-card level-4">
+                            <h3>Level 4</h3>
+                            <p class="level-name">Expert</p>
+                            <p class="level-desc">Maximum protection with debug guards</p>
+                            <div class="level-details">
+                                <ul>
+                                    <li>✓ Variable Renaming</li>
+                                    <li>✓ String Encoding</li>
+                                    <li>✓ Code Flow</li>
+                                    <li>✓ Debug Guards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="level-option">
+                        <input type="radio" name="obfuscationLevel" value="5">
+                        <div class="level-card level-5">
+                            <h3>Level 5</h3>
+                            <p class="level-name">Ultimate</p>
+                            <p class="level-desc">Full protection with anti-tampering</p>
+                            <div class="level-details">
+                                <ul>
+                                    <li>✓ Variable Renaming</li>
+                                    <li>✓ String Encoding</li>
+                                    <li>✓ Code Flow</li>
+                                    <li>✓ Debug Guards</li>
+                                    <li>✓ Anti-Tampering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="action-section">
+                <button id="obfuscateBtn" class="btn btn-primary">Obfuscate Code</button>
+                <button id="clearBtn" class="btn btn-secondary">Clear All</button>
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-section">
+                <div class="output-header">
+                    <h2>Obfuscated Result</h2>
+                    <button id="copyBtn" class="btn btn-copy">📋 Copy</button>
+                </div>
+                <textarea 
+                    id="codeOutput" 
+                    placeholder="Your obfuscated code will appear here..." 
+                    class="code-output" 
+                    readonly
+                ></textarea>
+                <div id="stats" class="stats"></div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Zenit Obfuscator by <strong>@ZENITBHAI</strong></p>
+            <p>Repository: <a href="https://github.com/ZENITBHAI/Zenit-obfuscator" target="_blank">Zenit-obfuscator</a></p>
+            <p class="version">v1.0 - 5 Level Obfuscation System</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
